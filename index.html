@@ -9,11 +9,13 @@
     <!-- bootstrap stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="" class="d-inline-block align-text-top">
@@ -32,13 +34,13 @@
                             <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#bag">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#sub">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -49,7 +51,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner mt-5">
                     <div class="carousel-item active">
-                        <div class="row p-5 bg-info">
+                        <div class="row p-5 panda-bg-info">
                             <div class="col-lg-6">
                                 <h1>Cool Dude Headphone</h1>
                                 <p>This is the best headphone in the world for people in front of funky world</p>
@@ -109,25 +111,163 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="p-3 border rounded-3 bg-warning d-flex align-items-center justify-content-between">
                         <h2>bags</h2>
-                        <img src="images/categories/bag.png" alt="">
+                        <img class="catagory" src="images/categories/bag.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4  col-md-6">
                     <div class="p-3 border rounded-3 bg-primary d-flex align-items-center justify-content-between">
                         <h2>Shoes</h2>
-                        <img src="images/categories/shoes.png" alt="">
+                        <img class="catagory" src="images/categories/shoes.png" alt="">
                     </div>
-
                 </div>
                 <div class="col-lg-4  col-md-6">
                     <div class="p-3 border rounded-3 bg-success d-flex align-items-center justify-content-between">
                         <h3>Watch</h3>
-                        <img src="images/categories/watch.png" alt="">
+                        <img class="catagory" src="images/categories/watch.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- card  -->
+        <section class="container mt-5" id="bag">
+            <h2>Bags</h2>
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <button class="btn panda-btn-warning">Buy now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <button class="btn panda-btn-warning">Buy now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <button type="button" class="btn panda-btn-warning">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- shoes  -->
+        <section id="shoes" class="container mt-5">
+            <h2>Shoes</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                <div class="col">
+                    <div class="card" style="width: 22rem;">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 22rem;">
+                        <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Adidas</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 22rem;">
+                        <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Puma</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container my-5">
+            <h2>Watches</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                <div class="col">
+                    <div class="card" style="width: 22rem;">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 22rem;">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Adidas</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 22rem;">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Puma</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- footer  -->
+
+
+        <section id="sub" style="height: 300px;"
+            class="container d-flex justify-content-center align-items-center rounded-3 bg-info">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p> Get updates on sales, specials and mores</p>
+                <input type="text" class="border rounded-1 form-control" placeholder="your email"><br><br>
+                <button class="btn bg-warning">submit</button>
+            </div>
+        </section>
+
     </main>
+    <footer class="mt-5 text-center">
+        <p>2021 Panda commarce.all rights reserved.
+        </p>
+    </footer>
 
     <!-- script sheet -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
